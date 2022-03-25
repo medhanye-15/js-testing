@@ -1,19 +1,32 @@
 {
-  "name": "nodejs-server",
+  "name": "js-testing",
   "version": "1.0.0",
-  "description": "our first node.js project",
+  "description": "Import this repo to create a starting point for Node.js projects in repl.it, https://replit.com",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-asserttype": "^1.0.5",
+    "nyc": "^15.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha || true",
+    "coverage": "nyc npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/medhanye-15/nodejs-server.git"
+    "url": "git+https://github.com/medhanye-15/js-testing.git"
   },
-  "author": "Medhanye Weldegebriel",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/medhanye-15/nodejs-server/issues"
+    "url": "https://github.com/medhanye-15/js-testing/issues"
   },
-  "homepage": "https://github.com/medhanye-15/nodejs-server#readme"
+  "homepage": "https://github.com/medhanye-15/js-testing#readme"
 }
